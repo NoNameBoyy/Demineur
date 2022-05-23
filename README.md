@@ -77,7 +77,7 @@ $ ./a.out
 
 ## :memo: License ##
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+This project is under license from MIT. For more details, see the [LICENSE](https://github.com/NoNameBoyy/Demineur/blob/main/LICENSE) file.
 
 
 Made with :heart: by <a href="https://github.com/NoNameBoyy" target="_blank">NoNameBoyy</a>
