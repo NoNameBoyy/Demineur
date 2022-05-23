@@ -69,7 +69,7 @@ void Init_Grille (char **tab_jeu,int **tab_reponse) {
 
 //L'affichage se fait en fonction de la taille que l'utilisateur a definit. On utilise un operateur ternaire pour que le tableau ne soit pas decale lorsque la taille de N est > 10
 
-void Aff_Grille(char **tab_jeu){
+void Aff_Grille (char **tab_jeu) {
     int i,j;
     printf("   |");
     for(i=0;i<N;i++)
