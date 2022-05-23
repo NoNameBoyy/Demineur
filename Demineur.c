@@ -6,7 +6,7 @@
 int N = 0;
 int K = 0; //declaration de variables globales qui seront par la suite modifiées par l'utilisateur a l'aide d'un scanf
 
-void Init_Grille (char **tab_jeu,int **tab_reponse) {
+void Init_Grille (char **tab_jeu, int **tab_reponse) {
     int i, j;
     for (i = 0; i < N; i++) {
         for (j = 0; j < N; j++){
