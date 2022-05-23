@@ -16,7 +16,7 @@ void Init_Grille (char **tab_jeu, int **tab_reponse) {
     }
     int k = K;
     srand(time(NULL));  //permet de rendre la fonction rand vraiment aleatoire
-    for (int mines_placees=0 ; mines_placees <= k; mines_placees++) {      //Boucle fort qui place les mines de maniere aleatoire sur le tableau de reponse
+    for (int mines_placees = 0 ; mines_placees <= k; mines_placees++) {      //Boucle fort qui place les mines de maniere aleatoire sur le tableau de reponse
             i = rand()%N;
             j = rand()%N;
             if (tab_reponse[i][j] == 0)
