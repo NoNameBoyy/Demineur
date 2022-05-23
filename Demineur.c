@@ -26,7 +26,7 @@ void Init_Grille (char **tab_jeu,int **tab_reponse) {
     }
 // On modifie ensuite les valeurs des cases autour des mines, on prend les coins au cas par cas, les lignes et colonnes sur les marges du tableaub aussi, et on verifie ensuite pour toute valeur
 // qui n'est ni a la marge ni dans un coin
-        int mines = 0;
+    int mines = 0;
     if (tab_reponse[0][0] != 9){
         if (tab_reponse[0][1] == 9)
             mines++;
@@ -40,30 +40,30 @@ void Init_Grille (char **tab_jeu,int **tab_reponse) {
     tab_reponse[N-1][N-1] = (tab_reponse[N-1][N-2]==9) + (tab_reponse[N-2][N-1]==9) + (tab_reponse[N-2][N-2]==9);
     for (int a = 1; a < N-1; a++) {
         if (tab_reponse[a][0]!=9)
-            tab_reponse[a][0] = (tab_reponse[a-1][0]==9) + (tab_reponse[a-1][1]==9) + (tab_reponse[a][1]==9) +
-                                (tab_reponse[a+1][0]==9) + (tab_reponse[a+1][1]==9);
+            tab_reponse[a][0] = (tab_reponse[a-1][0] == 9) + (tab_reponse[a-1][1] == 9) + (tab_reponse[a][1] == 9) +
+                                (tab_reponse[a+1][0] == 9) + (tab_reponse[a+1][1] == 9);
     }
-    for (int a=1; a<N-1; a++) {
+    for (int a = 1; a < N - 1; a++) {
         if (tab_reponse[a][N-1]!=9)
-            tab_reponse[a][N-1] = (tab_reponse[a-1][N-2]==9) + (tab_reponse[a-1][N-1]==9) + (tab_reponse[a][N-2]==9) +
-                                    (tab_reponse[a+1][N-1]==9) + (tab_reponse[a+1][N-2]==9);
+            tab_reponse[a][N-1] = (tab_reponse[a-1][N-2] == 9) + (tab_reponse[a-1][N-1] == 9) + (tab_reponse[a][N-2] == 9) +
+                                  (tab_reponse[a+1][N-1] == 9) + (tab_reponse[a+1][N-2] == 9);
     }
-    for (int b=1; b<N-1; b++) {
+    for (int b = 1; b < N - 1; b++) {
         if (tab_reponse[0][b]!=9)
-            tab_reponse[0][b] = (tab_reponse[0][b-1]==9) + (tab_reponse[0][b+1]==9) + (tab_reponse[1][b-1]==9) +
-                                (tab_reponse[1][b]==9) + (tab_reponse[1][b+1]==9);
+            tab_reponse[0][b] = (tab_reponse[0][b-1] == 9) + (tab_reponse[0][b+1] == 9) + (tab_reponse[1][b-1] == 9) +
+                                (tab_reponse[1][b]   == 9) + (tab_reponse[1][b+1] == 9);
     }
-    for (int b=1; b<N-1; b++) {
+    for (int b = 1; b < N - 1; b++) {
         if (tab_reponse[N-1][b]!=9)
-            tab_reponse[N-1][b] = (tab_reponse[N-1][b-1]==9) + (tab_reponse[N-1][b+1]==9) + (tab_reponse[N-2][b-1]==9) +
-                                    (tab_reponse[N-2][b]==9) + (tab_reponse[N-2][b+1]==9);
+            tab_reponse[N-1][b] = (tab_reponse[N-1][b-1] == 9) + (tab_reponse[N-1][b+1] == 9) + (tab_reponse[N-2][b-1] == 9) +
+                                  (tab_reponse[N-2][b]    ==9) + (tab_reponse[N-2][b+1] == 9);
     }
-    for (int a=1; a<N-1; a++)
-        for (int b=1; b<N-1; b++) {
-            if (tab_reponse[a][b]!=9)
-            tab_reponse[a][b] = (tab_reponse[a-1][b-1]==9) + (tab_reponse[a-1][b]== 9)+ (tab_reponse[a-1][b+1]== 9)+
-                                (tab_reponse[a][b-1]==9) + (tab_reponse[a][b+1]==9) +
-                                (tab_reponse[a+1][b-1]==9) + (tab_reponse[a+1][b]==9) + (tab_reponse[a+1][b+1]==9);
+    for (int a = 1; a <N - 1; a++)
+        for (int b = 1; b < N - 1; b++) {
+            if (tab_reponse[a][b] != 9)
+            tab_reponse[a][b] = (tab_reponse[a-1][b-1] == 9) + (tab_reponse[a-1][b] == 9) + (tab_reponse[a-1][b+1] == 9)+
+                                (tab_reponse[a][b-1]   == 9) + (tab_reponse[a][b+1] == 9) +
+                                (tab_reponse[a+1][b-1] == 9) + (tab_reponse[a+1][b] == 9) + (tab_reponse[a+1][b+1] == 9);
         }
 }
 
