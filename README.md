@@ -65,16 +65,12 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) in
 ## :checkered_flag: Starting ##
 
 ```bash
-# Clone this project
 $ git clone https://github.com/NoNameBoyy/demineur
 
-# Access
 $ cd demineur
 
-# Install dependencies
 $ gcc Demineur.c
 
-# Run the project
 $ ./a.out
 
 ```
