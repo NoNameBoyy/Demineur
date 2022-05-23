@@ -49,7 +49,7 @@ Démineur classique avec une grille de taille modulable par l'utilisateur.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Grille de taille variable choisie par l'utilisateur
+:heavy_check_mark: Grille de taille variable choisie par l'utilisateur  
 :heavy_check_mark: Le nombre de bombe est calculé comme un pourcentage de la taille de la grille
 
 ## :rocket: Technologies ##
